@@ -23,7 +23,7 @@
 namespace Phalcon\Error;
 
 use Phalcon\Di;
-use Phalcon\DiInterface;
+use Phalcon\Di\DiInterface;
 use Phalcon\Logger\Formatter;
 use Phalcon\Logger;
 use Phalcon\Logger\AdapterInterface;

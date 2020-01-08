@@ -23,7 +23,7 @@ namespace Phalcon\Error;
 
 use Phalcon\Config;
 use Phalcon\DI\FactoryDefault;
-use Phalcon\DiInterface;
+use Phalcon\Di\DiInterface;
 use Phalcon\Error\Handler as ErrorHandler;
 use Phalcon\Loader;
 use Phalcon\Mvc\Dispatcher;

@@ -1,9 +1,9 @@
 <?php
 namespace Phalcon\Mvc\View\Engine;
 
-use Phalcon\DiInterface;
-use Phalcon\Mvc\View\Engine;
-use Phalcon\Mvc\View\EngineInterface;
+use Phalcon\Di\DiInterface;
+use Phalcon\Mvc\View\Engine\AbstractEngine as Engine;
+use Phalcon\Mvc\View\Engine\EngineInterface;
 use Phalcon\Mvc\ViewBaseInterface;
 
 /**
@@ -50,7 +50,7 @@ class Twig extends Engine implements EngineInterface
      * Registers common function in Twig
      *
      * @param \Phalcon\Mvc\ViewInterface $view
-     * @param \Phalcon\DiInterface       $di
+     * @param \Phalcon\Di\DiInterface       $di
      * @param array                      $userFunctions
      */
     protected function registryFunctions($view, DiInterface $di, $userFunctions = [])

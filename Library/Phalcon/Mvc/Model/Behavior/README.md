@@ -432,7 +432,7 @@ Also by default `Audit` class will look for userName key in session for getting 
 You can change this behavior by:
 
 ```php
-use Phalcon\DiInterface;
+use Phalcon\Di\DiInterface;
 use Phalcon\Mvc\Model\Behavior\Blameable;
 
 public function initialize()

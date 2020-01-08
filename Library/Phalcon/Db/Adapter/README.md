@@ -17,7 +17,7 @@ use Phalcon\Db\Adapter\Cacheable\Mysql;
 $di->set(
     'db',
     function () {
-        /** @var \Phalcon\DiInterface $this */
+        /** @var \Phalcon\Di\DiInterface $this */
         $connection = new Mysql(
             [
                 'host'     => $this->getShared('config')->database->host,
@@ -61,7 +61,7 @@ use Phalcon\Db\Adapter\Pdo\Oracle;
 $di->set(
     'db',
     function () {
-        /** @var \Phalcon\DiInterface $this */
+        /** @var \Phalcon\Di\DiInterface $this */
 
         $config = $this->getShared('config');
 
@@ -90,7 +90,7 @@ use Phalcon\Db\Adapter\Mongo\Client;
 $di->setShared(
     'mongo',
     function () {
-        /** @var \Phalcon\DiInterface $this */
+        /** @var \Phalcon\Di\DiInterface $this */
         $mongo = new Client();
 
         return $mongo->selectDB(
@@ -114,7 +114,7 @@ use Phalcon\Db\Adapter\MongoDB\Client;
 $di->setShared(
     'mongo',
     function () {
-        /** @var \Phalcon\DiInterface $this */
+        /** @var \Phalcon\Di\DiInterface $this */
 
         $config = $this->getShared('config');
 

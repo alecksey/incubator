@@ -30,7 +30,7 @@ use Phalcon\Cli\Environment\EnvironmentInterface;
 use Phalcon\Cli\Environment\EnvironmentAwareInterface;
 use Phalcon\Di\FactoryDefault\Cli as CliDi;
 use Phalcon\Cli\Console as PhConsole;
-use Phalcon\DiInterface;
+use Phalcon\Di\DiInterface;
 
 class Console extends PhConsole implements EnvironmentAwareInterface
 {

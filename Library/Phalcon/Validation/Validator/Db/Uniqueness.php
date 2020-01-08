@@ -23,7 +23,7 @@ use Phalcon\Validation\Validator;
 use Phalcon\Validation\Message;
 use Phalcon\Db\Adapter\Pdo as DbConnection;
 use Phalcon\Validation\Exception as ValidationException;
-use Phalcon\DiInterface;
+use Phalcon\Di\DiInterface;
 use Phalcon\Di;
 use Phalcon\Db;
 use Phalcon\Validation;

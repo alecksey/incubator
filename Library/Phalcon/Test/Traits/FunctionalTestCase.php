@@ -21,7 +21,7 @@ namespace Phalcon\Test\Traits;
 use Phalcon\Escaper as PhEscaper;
 use Phalcon\Mvc\Dispatcher as PhDispatcher;
 use Phalcon\Mvc\Application as PhApplication;
-use Phalcon\DiInterface;
+use Phalcon\Di\DiInterface;
 
 trait FunctionalTestCase
 {
