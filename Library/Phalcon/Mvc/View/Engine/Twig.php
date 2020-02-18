@@ -246,7 +246,7 @@ class Twig extends Engine implements EngineInterface
      */
     public function render($path, $params, $mustClean = false)
     {
-        $view = $this->_view;
+        $view = $this->view;
         if (!isset($params['content'])) {
             $params['content'] = $view->getContent();
         }
@@ -264,7 +264,7 @@ class Twig extends Engine implements EngineInterface
         $content = $this->twig->render($relativePath, $params);
 
         if ($mustClean) {
-            $this->_view->setContent($content);
+            $this->view->setContent($content);
         } else {
             echo $content;
         }
